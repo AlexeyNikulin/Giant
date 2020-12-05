@@ -1,0 +1,37 @@
+.footer {
+    min-height: 180px;
+    padding: 60px 0;
+    background-color: $black;
+    &__links {
+        @include flex;
+        margin: 0 auto;
+        max-width: 145px;
+    }
+
+    &__link {
+        &-dribbble {
+            i {
+                color: #f31f79;
+            }
+        }
+    }
+
+    &__copyright {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        color: $white;
+        margin-top: 30px;
+    }
+}
+.fab {
+}
+.fa-facebook-f {
+}
+.fa-twitter {
+}
+.fa-dribbble {
+}
+.fa-behance {
+}

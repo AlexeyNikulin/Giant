@@ -1,0 +1,150 @@
+.package {
+    min-height: 900px;
+    padding: 120px 0 120px 0;
+
+    &__subtitle {
+        max-width: 660px;
+        margin: 0 auto;
+        margin-top: 23px;
+        text-align: center;
+    }
+
+    &__wrapper {
+        @include flex;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .package-item {
+        width: 262px;
+        min-height: 480px;
+        padding: 15px 0 40px;
+        margin: 30px 10px;
+        background-color: $white-grey;
+        text-align: center;
+        transition: 1s all;
+        &__title {
+            font-family: Dosis;
+            font-size: 20px;
+            font-weight: 400;
+            color: $black-light;
+        }
+    
+        &__price {
+            position: relative;
+            margin-top: 18px;
+            height: 120px;
+            width: 100%;
+            &-wrapper {
+                position: relative;
+                padding: 30px 0 53px;
+                height: 120px;
+                background: $white;
+                width: 100%;
+                animation: fade 1s ease;
+                &::before, &::after {
+                    content: "";
+                    height: 0; 
+                    width: 0;
+                    position: absolute; 
+                    bottom: 0;
+                }
+                &::before {
+                    left: 0; 
+                    border-bottom: 40px solid $white-grey;
+                    border-right: 131px solid transparent;
+                }
+                &::after {
+                    right: 0; 
+                    border-bottom: 40px solid $white-grey;
+                    border-left: 131px solid transparent;
+                }
+            }
+        }
+
+        &__number {
+            position: relative;
+            font-family: Dosis;
+            font-size: 48px;
+            font-weight: 500;
+            color: $black-light;
+            line-height: 0.8;
+            transition: 1s all;
+            &::before {
+                content: '$';
+                position: absolute;
+                font-size: 18px;
+                top: 14px;
+                left: -12px;
+
+            }
+            span {
+                font-size: 18px;
+            }
+        }
+    
+        &__gives {
+            margin-top: 40px;
+            padding: 0 34px 0 27px;
+        }
+    
+        &__give {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 2.14;
+            color: $grey;
+            border-bottom: solid 1px #eeeeee;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    
+        &__label {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.71;
+            color: #aaaaaa;
+            margin-top: 30px;
+        }
+    
+        &__btn {
+            width: 139px;
+            height: 40px;
+            border-radius: 20px;
+            border: solid 1px #eeeeee;
+            background-color: $white;
+            margin-top: 10px;
+            cursor: pointer;
+            outline: none;
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-active {
+            box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1);
+            background-color: $white;
+            .package-item__price {
+                &-wrapper {
+                    animation: fade 1s ease;
+                    @include gradient;
+                    &::before {
+                        left: 0; 
+                        border-bottom: 40px solid $white;
+                        border-right: 131px solid transparent;
+                    }
+                    &::after {
+                        right: 0; 
+                        border-bottom: 40px solid $white;
+                        border-left: 131px solid transparent;
+                    }
+                }
+            }
+            .package-item__number {
+                color: $white;
+            }
+        }
+    }    
+}

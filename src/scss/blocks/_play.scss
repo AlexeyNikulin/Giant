@@ -1,0 +1,13 @@
+.play {
+    min-height: 400px;
+    background: url('../img/bg_play.jpg') center center/cover no-repeat;
+    @include flex-center;
+    &__btn {
+        @include flex-center;
+        width: 75px;
+        height: 75px;
+        border-radius: 100%;
+        @include gradient;
+        cursor: pointer;
+    }
+}

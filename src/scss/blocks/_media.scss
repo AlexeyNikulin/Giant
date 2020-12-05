@@ -1,0 +1,263 @@
+
+@media (max-width: 1400px) {
+    .promo {
+        &__iphones {
+            top: 40px;
+            right: 0;
+            max-width: 850px;
+        }
+    }
+    .screenshots-slider {
+        padding: 0 15px 0 15px;
+    }
+    .feedbacks-slider {
+        padding: 0 15px 0 15px;
+        width: 1100px;
+        &__init {
+            width: 800px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+    .promo {
+        &__iphones {
+            top: 130px;
+            right: 0;
+            max-width: 638px;
+        }
+    }
+    .skills__ipshone {
+        max-width: 340px;
+    }
+    .screenshots {
+        .screenshots-slider {
+            .container {
+                width: 970px;
+            }   
+            &__slide {
+                width: 200px;
+                &-center {
+                    width: 280px;
+                }
+            }
+        }
+    }
+    .feedbacks-slider {
+        padding: 0 15px 0 15px;
+        width: 900px;
+        &__init {
+            width: 750px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .promo {
+        &__iphones {
+            display: none;
+        }
+    }
+
+    .advantages {
+        &__wrapper {
+            @include flex-col;
+        }
+        .advantages-item {
+            width: 400px;
+            &__content {
+                max-width: 300px;
+            }
+        }
+    }
+    .skills {
+        &__content {
+            max-width: 370px;
+        }
+
+        &__ipshone {
+            max-width: 300px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+    }
+    .screenshots {
+        min-height: 700px;
+        padding: 60px 0 60px 0;
+        .screenshots-slider {
+            .container {
+                width: 740px;
+            }   
+            &__slide {
+                width: 160px;
+                &-center {
+                    width: 240px;
+                }
+                &-3 {
+                    left: 120px;
+                }
+                &-5 {
+                    right: 120px;
+                }
+            }
+        }
+    }
+    .package {
+        &__wrapper {
+            justify-content: center;
+        }
+        .package-item {
+            margin: 30px 15px;
+        }
+    }
+    .feedbacks-slider {
+        width: 600px;
+        &__init {
+            width: 360px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        min-height: 600px;
+        .hamburger {
+            display: block;
+        }
+        &__title {
+            font-size: 48px;
+        }
+        &__wrapper {
+            margin-top: 0;
+        }
+    }
+
+    .header {
+        &__menu {
+            display: none;
+        }
+    }
+
+    .skills {
+        &__content {
+            margin: 0 auto;
+        }
+
+        &__ipshone {
+            display: none;
+        }
+    }
+    .screenshots {
+        .screenshots-slider {
+            margin-top: 0;
+            &__init {
+                height: 400px;
+            }
+            .container {
+                width: 400px;
+            }   
+            &__slide {
+                display: none;
+                &-center {
+                    display: block;
+                }
+            }
+        }
+    }
+    .feedbacks-slider {
+        width: 500px;
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .promo {
+        &__title {
+            font-size: 32px;
+        }
+        &__descr {
+            font-size: 13px;
+        }
+    }
+
+    .advantages {
+        &__wrapper {
+            @include flex-col;
+        }
+        .advantages-item {
+            @include flex-col;
+            width: 300px;
+            &__content {
+                text-align: center;
+                max-width: 300px;
+                margin-top: 10px;
+            }
+            &__descr {
+                font-size: 13px;
+            }
+        }  
+    }
+
+    .skills {
+        &__title {
+            font-size: 27px;
+        }
+
+        &__descr {
+            margin-top: 50px;
+        }
+    }
+    .screenshots {
+        .screenshots-slider {
+            .container {
+                width: 210px;
+                padding: 0;
+            }   
+            &__slide {
+                &-center {
+                    width: 200px;
+                }
+            }
+        }
+    }
+    .feedbacks {
+        &__arrow-left, &__arrow-right {
+            position: absolute;
+            top: -30px;
+        }
+        &__arrow-left {
+            left: 50%;
+            transform: translateX(-120%);
+        }
+        &__arrow-right {
+            right: 50%;
+            transform: translateX(120%);
+        }
+    }
+    .feedbacks-slider {
+        width: 290px;
+        padding: 0;
+        &__init {
+            width: 290px;
+        }
+
+    }
+    .download {
+        &-item {
+            width: 300px;
+            padding-left: 10px;
+        }
+    }
+}

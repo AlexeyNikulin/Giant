@@ -1,0 +1,48 @@
+.advantages {
+    min-height: 462px;
+    padding: 62px 0 0 0;
+    &__wrapper {
+        @include flex;
+        flex-wrap: wrap;
+    }
+    .advantages-item {
+        width: 348px;
+        margin-top: 58px;
+        @include flex;
+		&__circle {
+            width: 75px;
+            height: 75px;
+            @include flex-center;
+            border: solid 1px #eeeeee;
+            background-color: $white-grey;
+            border-radius: 100%;
+		}
+
+		&__content {
+            max-width: 248px;
+		}
+
+		&__title {
+            font-family: Dosis;
+            font-size: 24px;
+            font-weight: 500;
+            color: $black;
+		}
+
+		&__descr {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.71;
+            color: $grey;
+            margin-top: 16px;
+		}
+	}
+	&__hr {
+		margin-top: 100px;
+		height: 2px;
+		mix-blend-mode: multiply;
+		background-color: #eeeeee;
+		border: none;
+	}
+}

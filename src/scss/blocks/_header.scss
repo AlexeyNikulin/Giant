@@ -1,0 +1,45 @@
+.header {
+    min-height: 40px;
+    @include flex;
+    &__logo {
+        img {
+            max-width: 48px;
+        }
+        font-family: Dosis;
+        font-size: 36px;
+        line-height: 0.67;
+        font-weight: 700;
+        color: $white;
+    }
+
+    &__menu {
+        @include flex;
+        width: 440px;
+    }
+
+    &__item {
+        a {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.71;
+            color: $white;
+        }
+    }
+
+    &__item-active {
+        a {
+            display: block; 
+            width: 153px;
+            height: 35px;
+            border-radius: 17.5px;
+            background-color: $white;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 35px;
+            color: $black;
+        }
+    }
+}

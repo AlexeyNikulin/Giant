@@ -1,0 +1,58 @@
+.feedbacks {
+    min-height: 690px;
+    padding: 120px 0 120px 0;
+
+    &__subtitle {
+        max-width: 660px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 23px;
+    }
+
+    &-slider {
+        position: relative;
+        @include flex;
+        width: 1320px;
+        margin: 0 auto;
+        margin-top: 80px;
+        
+        &__init {
+            @include flex;
+            overflow: hidden;
+            flex-wrap: wrap;
+            height: 350px;
+            width: 1140px;
+
+        } 
+    
+        &__slide {
+            width: 360px;
+            min-height: 273px;
+            padding: 40px 53px 40px 39px;
+            background-color: $white-grey;
+            margin: 25px 0;
+            &-active {
+                background-color: $white;
+                box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1);
+            }
+        }
+    
+        &__author {
+            @include flex-start;
+            margin-top: 30px;
+        }
+
+        &__info {
+            margin-left: 20px;
+        }
+    
+        &__name {
+            font-family: Dosis;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.33;
+            color: $black;
+        }
+    }
+}
+

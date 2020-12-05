@@ -1,0 +1,82 @@
+.promo {
+    position: relative;
+    @include gradient;
+    min-height: 800px;
+    padding: 30px 0 83px 0;
+
+    &__wrapper {
+        position: relative;
+        margin-top: 80px;
+    }
+
+    &__content {
+        padding-top: 60px;
+        max-width: 490px;
+    }
+
+    &__title {
+        font-family: Dosis;
+        font-size: 54px;
+        font-weight: 600;
+        line-height: 1.23;
+        color: $white;
+        margin: 0 0 23px 0;
+    }
+
+    &__descr {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.71;
+        color: $white;
+    }
+
+    &__btn {
+        width: 192px;
+        height: 40px;
+        border-radius: 20px;
+        box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1);
+        border: solid 5px $orange;
+        background-color: $white;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        color: $black;
+        margin-top: 40px;
+        cursor: pointer;
+        outline: none;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__iphones {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 964px;
+        img {
+            width: 100%;
+        }
+    }
+
+    .promo-item {
+        @include flex-start;
+        margin-top: 20px;
+        &__tick {
+            width: 15px;
+            height: 15px;
+        }
+    
+        &__descr {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.71;
+            color: $white;
+            margin-left: 20px;
+        }
+    }
+}
+
+
